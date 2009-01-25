@@ -14,7 +14,7 @@ namespace ClearWarrior.Entities
 
         }
 
-        public RoomUnit(Entity entity)
+        public RoomUnit(IEntity entity)
         {
             Entity = entity;
         }
