@@ -1,0 +1,50 @@
+*Basic Concepts:*
+
+What's wrong with how I'm doing things now? - i.e. why should I read any of this stuff
+On Software Engineering as a Science (On thinking for yourself)
+
+Side problems...
+- It'd be nice to have a mini info sheet on all of the various agile practices and tools.
+- What problems do these things solve?
+
+Problem Index
+* I am working with some code and it has so many if/then statements I'm not sure what's going on. How can I work with this?
+* My team would love to test more of our product but we haven't figured out how to test the UI (Web Forms, MVC, WPF, WinForms, etc.) yet.
+* I have a function/method that is extremely long and hard to understand. How can I make it more readable?
+* I'm trying to test some code but it is also calling the database. How can I test this?
+* What are some ways to keep business logic out of the database?
+* What are some ways to make business logic spread between code and the database more maintainable?
+* When creating a real long report on a website by hand I notice that the web page takes a long time to load. How can I improve this?
+
+Continuous Improvement
+OOP Design Principles - SOLID etc 
+Design Patterns - probably should be fairly lightweight, too many and too complex to cover in detail
+
+*Frameworks & When to (not) use them:*
+
+ORM
+- What ORM is
+- How ORM contrasts to traditional data access
+- When to use ORM and when not to
+- Overviews and rough comparison of NHibernate, Capable, EF, etc
+
+IoC containers (as sample expansion)
+- What an IoC container is and does
+- Why IoC can help your application
+- Overviews an rough comparisons of Windsor, Unity, StructureMap, Spring, Ninject, (forgot one here :S)
+
+*Methodologies:*
+
+Agile (as a concept)
+- XP
+- Lean
+- Scrum
+- Waterfall
+
+TDD
+BDD
+DDD
+
+*Last thoughts:*
+
+Differences between languages (pros/cons)

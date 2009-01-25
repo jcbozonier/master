@@ -1,0 +1,495 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iNove 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-30 14:04+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: mg12 <wuzhao.mail@gmail.com>\n"
+"Language-Team: NeoEase <http://www.neoease.com/themes/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: D:\\workspace\\php5\\wordpress\\wp-content\\themes\\inove\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:8
+msgid "RSS 2.0 - all posts"
+msgstr "RSS 2.0 - all posts"
+
+#: 404.php:9
+msgid "RSS 2.0 - all comments"
+msgstr "RSS 2.0 - all comments"
+
+#: 404.php:22
+msgid "Talker"
+msgstr "Talker"
+
+#: 404.php:25
+msgid "Welcome to 404 error page!"
+msgstr "404 エラーページへようこそ！"
+
+#: 404.php:26
+msgid "Welcome to this customized error page. You've reached this page because you've clicked on a link that does not exist. This is probably our fault... but instead of showing you the basic '404 Error' page that is confusing and doesn't really explain anything, we've created this page to explain what went wrong."
+msgstr "カスタマイズされたエラーページへようこそ。<br />あなたは存在しないリンクをクリックしたため、このページが表示されています。原因は、たぶん私にありますが...<br />せめてものお詫びに基本的な &quot;404エラーページ&quot; をあなたに見せる代わりに、何が支障をきたしたかを説明するこのページを作成しました。"
+
+#: 404.php:27
+msgid "You can either (a) click on the 'back' button in your browser and try to navigate through our site in a different direction, or (b) click on the following link to go to homepage."
+msgstr "(a) ブラウザの&quot;戻る&quot;ボタンをクリックして、以前に表示していたページに戻るか<br />(b) ホームページに戻るために以下のリンクをクリックしてください。"
+
+#: 404.php:29
+msgid "Back to homepage &raquo;"
+msgstr "ホームページへ戻る &raquo;"
+
+#: archive.php:5
+msgid "Search Results"
+msgstr "検索結果"
+
+#: archive.php:6
+#, php-format
+msgid "Keyword: &#8216;%1$s&#8217;"
+msgstr "キーワード: &#8216;%1$s&#8217;"
+
+#: archive.php:9
+msgid "Archive"
+msgstr "アーカイブ"
+
+#: archive.php:14
+#, php-format
+msgid "Archive for the &#8216;%1$s&#8217; Category"
+msgstr "&#8216;%1$s&#8217; カテゴリーのアーカイブ"
+
+#: archive.php:17
+#, php-format
+msgid "Posts Tagged &#8216;%1$s&#8217;"
+msgstr "&#8216;%1$s&#8217; タグのついている投稿"
+
+#: archive.php:20
+#: archive.php:23
+#: archive.php:26
+#, php-format
+msgid "Archive for %1$s"
+msgstr "%1$s のアーカイブ"
+
+#: archive.php:20
+#: archive.php:43
+#: archives.php:15
+#: comments.php:85
+#: functions.php:401
+#: index.php:18
+#: links.php:15
+#: single.php:15
+msgid "F jS, Y"
+msgstr "Y 年 n 月 j 日"
+
+#: archive.php:23
+msgid "F, Y"
+msgstr "Y 年 n 月"
+
+#: archive.php:26
+msgid "Y"
+msgstr "Y 年"
+
+#: archive.php:29
+msgid "Author Archive"
+msgstr "投稿者のアーカイブ"
+
+#: archive.php:32
+msgid "Blog Archives"
+msgstr "ブログアーカイブ"
+
+#: archive.php:45
+#: index.php:20
+msgid "No comments"
+msgstr "コメントはありません"
+
+#: archive.php:45
+#: index.php:20
+msgid "1 comment"
+msgstr "コメント 1 件"
+
+#: archive.php:45
+#: index.php:20
+#, php-format
+msgid "% comments"
+msgstr "コメント % 件"
+
+#: archive.php:46
+#: archives.php:21
+#: comments.php:89
+#: functions.php:409
+#: index.php:21
+#: links.php:24
+#: single.php:21
+msgid "Edit"
+msgstr "編集"
+
+#: archive.php:52
+#: index.php:27
+msgid "Read more..."
+msgstr "続きを読む..."
+
+#: archive.php:64
+#: archives.php:33
+#: index.php:40
+#: links.php:43
+#: single.php:39
+msgid "Sorry, no posts matched your criteria."
+msgstr "該当する投稿は見つかりませんでした。"
+
+#: archive.php:72
+#: index.php:48
+msgid "Newer Entries"
+msgstr "新しい投稿"
+
+#: archive.php:73
+#: index.php:49
+msgid "Older Entries"
+msgstr "以前の投稿"
+
+#: archives.php:18
+#: links.php:18
+#: single.php:18
+msgid "Goto comments"
+msgstr "コメント"
+
+#: archives.php:19
+#: comments.php:27
+#: links.php:19
+#: single.php:19
+msgid "Leave a comment"
+msgstr "コメントをどうぞ"
+
+#: comments.php:5
+msgid "Enter your password to view comments."
+msgstr "この投稿はパスワードで保護されています。コメントを閲覧するにはパスワードを入力してください。"
+
+#: comments.php:24
+msgid "Comments"
+msgstr "コメント"
+
+#: comments.php:25
+msgid "Trackbacks"
+msgstr "トラックバック"
+
+#: comments.php:30
+msgid "Trackback"
+msgstr "トラックバック"
+
+#: comments.php:54
+msgid "No comments yet."
+msgstr "コメントはまだありません。"
+
+#: comments.php:68
+msgid "Comment pages"
+msgstr "コメントページ"
+
+#: comments.php:85
+#: functions.php:401
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
+
+#: comments.php:85
+#: functions.php:401
+msgid "H:i"
+msgstr "H:i"
+
+#: comments.php:102
+msgid "No trackbacks yet."
+msgstr "トラックバックはまだありません。"
+
+#: comments.php:116
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: comments.php:127
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "コメントを投稿するには<a href=\"%s\">ログイン</a>してください。"
+
+#: comments.php:143
+msgid "Logged in as"
+msgstr "ログイン中"
+
+#: comments.php:144
+msgid "Log out of this account"
+msgstr "このアカウントからログアウト"
+
+#: comments.php:144
+msgid "Logout &raquo;"
+msgstr "ログアウト &raquo;"
+
+#: comments.php:150
+#, php-format
+msgid "Welcome back <strong>%s</strong>."
+msgstr "お帰りなさい <strong>%s</strong>."
+
+#: comments.php:151
+msgid "Change &raquo;"
+msgstr "変更する &raquo;"
+
+#: comments.php:152
+msgid "Close &raquo;"
+msgstr "閉じる &raquo;"
+
+#: comments.php:159
+msgid "Name"
+msgstr "お名前"
+
+#: comments.php:159
+#: comments.php:163
+msgid "(required)"
+msgstr "(必須)"
+
+#: comments.php:163
+msgid "E-Mail (will not be published)"
+msgstr "メール (公開されません)"
+
+#: comments.php:167
+msgid "Website"
+msgstr "ウェブサイト"
+
+#: comments.php:184
+msgid "Subscribe to comments feed"
+msgstr "コメントフィードをRSSリーダーで購読する"
+
+#: comments.php:186
+msgid "Submit Comment"
+msgstr "コメント送信"
+
+#: functions.php:129
+#: functions.php:138
+msgid "Current Theme Options"
+msgstr "テーマの設定"
+
+#: functions.php:143
+msgid "Meta"
+msgstr "メタ情報"
+
+#: functions.php:145
+msgid "Description:"
+msgstr "概要:"
+
+#: functions.php:149
+msgid "Keywords:"
+msgstr "キーワード:"
+
+#: functions.php:149
+msgid "( Separate keywords with commas )"
+msgstr "( カンマ区切りのキーワード )"
+
+#: functions.php:160
+msgid "Search"
+msgstr "検索"
+
+#: functions.php:164
+msgid "Using google custom search engine."
+msgstr "Google カスタムサーチエンジンを使用する。"
+
+#: functions.php:167
+msgid "CX:"
+msgstr "CX:"
+
+#: functions.php:170
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of <a href=\"http://www.google.com/coop/cse/\">Google Custom Search Engine</a>, and type the <code>value</code> here.<br/>For example: <code>014782006753236413342:1ltfrybsbz4</code>"
+msgstr "Google カスタムサーチエンジンの <strong>サーチボックス</strong> から <code>name=\"cx\"</code> を探して、ここに入力してください。例：<code>014782006753236413342:1ltfrybsbz4</code>"
+
+#: functions.php:179
+msgid "Menubar"
+msgstr "メニューバー"
+
+#: functions.php:183
+msgid "Show pages as menu."
+msgstr "ページをメニューに表示する。"
+
+#: functions.php:187
+msgid "Show categories as menu."
+msgstr "カテゴリをメニューに表示する"
+
+#: functions.php:198
+msgid "Notice"
+msgstr "通知バー"
+
+#: functions.php:200
+#: functions.php:224
+msgid "HTML enabled"
+msgstr "HTML タグは有効です"
+
+#: functions.php:206
+msgid "This notice bar will display at the top of posts on homepage."
+msgstr "この通知バーは投稿の先頭に表示されます。"
+
+#: functions.php:222
+#: sidebar.php:52
+msgid "Showcase"
+msgstr "ショーケース"
+
+#: functions.php:228
+msgid "This showcase will display at the top of sidebar."
+msgstr "このショーケースはサイドバーの先頭に表示されます。"
+
+#: functions.php:230
+msgid "Who can see?"
+msgstr "だれが見ることができますか?"
+
+#: functions.php:233
+msgid "Registered Users"
+msgstr "登録されているユーザ"
+
+#: functions.php:237
+msgid "Commentator"
+msgstr "コメントした人"
+
+#: functions.php:241
+msgid "Visitors"
+msgstr "すべての訪問者"
+
+#: functions.php:246
+msgid "Title:"
+msgstr "タイトル:"
+
+#: functions.php:262
+msgid "Posts"
+msgstr "投稿"
+
+#: functions.php:266
+msgid "Show author on posts."
+msgstr "投稿に投稿者を表示する。"
+
+#: functions.php:270
+msgid "Show categories on posts."
+msgstr "投稿にカテゴリを表示する。"
+
+#: functions.php:274
+msgid "Show tags on posts."
+msgstr "投稿にタグを表示する。"
+
+#: functions.php:284
+msgid "Feed"
+msgstr "フィード"
+
+#: functions.php:288
+msgid "Custom feed."
+msgstr "カスタムフィード"
+
+#: functions.php:291
+#: functions.php:298
+msgid "URL:"
+msgstr "URL:"
+
+#: functions.php:295
+msgid "Email feed."
+msgstr "メールフィード"
+
+#: functions.php:305
+msgid "Save Changes"
+msgstr "変更を保存する"
+
+#: functions.php:405
+msgid "Reply"
+msgstr "返信"
+
+#: functions.php:406
+msgid "Quote"
+msgstr "引用"
+
+#: functions.php:411
+msgid "Advanced edit"
+msgstr "編集"
+
+#: functions.php:417
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: links.php:22
+msgid "Edit links"
+msgstr "リンクを編集"
+
+#: sidebar.php:25
+msgid "Subscribe to this blog..."
+msgstr "このブログのフィードを購読する..."
+
+#: sidebar.php:25
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> フィード"
+
+#: sidebar.php:27
+#: sidebar.php:28
+#: sidebar.php:29
+#: sidebar.php:30
+#: sidebar.php:31
+#: sidebar.php:32
+#: sidebar.php:33
+#: sidebar.php:34
+msgid "Subscribe with "
+msgstr "Subscribe with "
+
+#: sidebar.php:27
+msgid "Google"
+msgstr "Google"
+
+#: sidebar.php:28
+msgid "Youdao"
+msgstr "Youdao"
+
+#: sidebar.php:29
+msgid "Xian Guo"
+msgstr "Xian Guo"
+
+#: sidebar.php:30
+msgid "Zhua Xia"
+msgstr "Zhua Xia"
+
+#: sidebar.php:31
+msgid "My Yahoo!"
+msgstr "My Yahoo!"
+
+#: sidebar.php:32
+msgid "newsgator"
+msgstr "newsgator"
+
+#: sidebar.php:33
+msgid "Bloglines"
+msgstr "Bloglines"
+
+#: sidebar.php:34
+msgid "iNezha"
+msgstr "iNezha"
+
+#: sidebar.php:38
+msgid "Subscribe to this blog via email..."
+msgstr "メールで、このブログを購読する..."
+
+#: sidebar.php:38
+msgid "Email feed"
+msgstr "メールフィード"
+
+#: single.php:7
+msgid "Goto homepage"
+msgstr "ホームページへ戻る"
+
+#: single.php:7
+msgid "Home"
+msgstr "ホーム"
+
+#: templates/end.php:3
+msgid "Top"
+msgstr "トップ"
+
+#: templates/end.php:12
+msgid "Copyright &copy; "
+msgstr "Copyright &copy; "
+
+#: templates/end.php:22
+msgid "Theme by <a href=\"http://www.neoease.com/\">mg12</a>. Valid <a href=\"http://validator.w3.org/check?uri=referer\">XHTML 1.1</a> and <a href=\"http://jigsaw.w3.org/css-validator/\">CSS 3</a>."
+msgstr ""
+
+#: templates/header.php:30
+#: templates/header.php:37
+msgid "Switcher"
+msgstr "切り替え"
+

@@ -1,0 +1,507 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iNove 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-15 21:57+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: mg12 <wuzhao.mail@gmail.com>\n"
+"Language-Team: NeoEase <http://www.neoease.com/themes/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: D:\\workspace\\php\\blog\\wp-content\\themes\\inove\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:8
+#: header.php:43
+msgid "RSS 2.0 - all posts"
+msgstr "RSS 2.0 - सभी प्रविष्टियाँ "
+
+#: 404.php:9
+#: header.php:44
+msgid "RSS 2.0 - all comments"
+msgstr "RSS 2.0 - सभी टिप्पणियाँ "
+
+#: 404.php:22
+msgid "Talker"
+msgstr "टोकर "
+
+#: 404.php:25
+msgid "Welcome to 404 error page!"
+msgstr "404 त्रुटी पन्ने पर स्वागत है! "
+
+#: 404.php:26
+msgid "Welcome to this customized error page. You've reached this page because you've clicked on a link that does not exist. This is probably our fault... but instead of showing you the basic '404 Error' page that is confusing and doesn't really explain anything, we've created this page to explain what went wrong."
+msgstr "इस कस्टमाइज पन्ने पर आपका स्वागत है. आप यहाँ इसलिए पहूँचे है क्योकि आपने जिस कड़ी को क्लिक किया था, वह मौजूद नहीं थी. सम्भवतः यह हमारी चुक है...परंतु आपको तत्काल सामन्य से \"404 त्रुटि\" पन्ने पर  ले जाने के जहाँ कि असमंजस व वास्तव में कुछ भी स्पष्ट नहीं होता है, हमने यह पन्ना बनाया है, जो दर्शाता है कि कुछ गलत हुआ है.  "
+
+#: 404.php:27
+msgid "You can either (a) click on the 'back' button in your browser and try to navigate through our site in a different direction, or (b) click on the following link to go to homepage."
+msgstr "आप (क) या तो अपने ब्राउजर के \"बेक\" बटन पर क्लिक कर हमारी साइट पर अलग दिशा से भ्रमण करने का प्रयास करें अथवा (ख) मुख्य पन्ने पर जाने के लिए इस कड़ी पर क्लिक करें.   "
+
+#: 404.php:29
+msgid "Back to homepage &raquo;"
+msgstr "मुख्य पन्ने पर वापस &raquo;"
+
+#: archive.php:4
+msgid "Archive"
+msgstr "पूरालेख "
+
+#: archive.php:9
+#, php-format
+msgid "Archive for the &#8216;%1$s&#8217; Category"
+msgstr "&#8216;%1$s&#8217; श्रेणी के पूरालेख "
+
+#: archive.php:12
+#, php-format
+msgid "Posts Tagged &#8216;%1$s&#8217;"
+msgstr "&#8216;%1$s&#8217; टेगों की प्रविष्टियाँ "
+
+#: archive.php:15
+#: archive.php:18
+#: archive.php:21
+#, php-format
+msgid "Archive for %1$s"
+msgstr "%1$s पूरालेख "
+
+#: archive.php:15
+#: archive.php:37
+#: archives.php:15
+#: comments.php:85
+#: functions.php:391
+#: index.php:18
+#: links.php:15
+#: page.php:9
+#: search.php:12
+#: single.php:15
+msgid "F jS, Y"
+msgstr "F jS, Y"
+
+#: archive.php:18
+msgid "F, Y"
+msgstr "F, Y"
+
+#: archive.php:21
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:24
+msgid "Author Archive"
+msgstr "लेखक के पूरालेख "
+
+#: archive.php:27
+msgid "Blog Archives"
+msgstr "ब्लॉग के पूरालेख "
+
+#: archive.php:39
+#: index.php:20
+#: search.php:14
+msgid "No comments"
+msgstr "कोई टिप्पणी नहीं "
+
+#: archive.php:39
+#: index.php:20
+#: search.php:14
+msgid "1 comment"
+msgstr "1 टिप्पणी "
+
+#: archive.php:39
+#: index.php:20
+#: search.php:14
+#, php-format
+msgid "% comments"
+msgstr "% टिप्पणियाँ "
+
+#: archive.php:40
+#: archives.php:21
+#: comments.php:89
+#: functions.php:399
+#: index.php:21
+#: links.php:24
+#: page.php:15
+#: search.php:15
+#: single.php:21
+msgid "Edit"
+msgstr "सम्पादन "
+
+#: archive.php:46
+#: index.php:27
+#: search.php:21
+msgid "Read more..."
+msgstr "आगे पढ़ें "
+
+#: archive.php:58
+#: archives.php:33
+#: index.php:39
+#: links.php:43
+#: page.php:28
+#: search.php:33
+#: single.php:38
+msgid "Sorry, no posts matched your criteria."
+msgstr "क्षमा करें, आप द्वारा इच्छित प्रविष्टियाँ नहीं मिली. "
+
+#: archive.php:66
+#: index.php:47
+#: search.php:41
+msgid "Newer Entries"
+msgstr "नई प्रविष्टियाँ "
+
+#: archive.php:67
+#: index.php:48
+#: search.php:42
+msgid "Older Entries"
+msgstr "पूरानी प्रविष्टियाँ "
+
+#: archives.php:18
+#: links.php:18
+#: page.php:12
+#: single.php:18
+msgid "Goto comments"
+msgstr "टिप्पणियों पर जाएं "
+
+#: archives.php:19
+#: comments.php:27
+#: links.php:19
+#: page.php:13
+#: single.php:19
+msgid "Leave a comment"
+msgstr "टिप्पणी करें "
+
+#: comments.php:5
+msgid "Enter your password to view comments."
+msgstr "टिप्पणियों को देखने के लिए अपना कूटशब्द(पासवर्ड) डालें. "
+
+#: comments.php:24
+msgid "Comments"
+msgstr "टिप्पणियाँ "
+
+#: comments.php:25
+msgid "Trackbacks"
+msgstr "ट्रेकबैक "
+
+#: comments.php:30
+msgid "Trackback"
+msgstr "ट्रेकबेक "
+
+#: comments.php:54
+msgid "No comments yet."
+msgstr "अभी तक कोई टिप्पणी नहीं. "
+
+#: comments.php:68
+msgid "Comment pages"
+msgstr "टिप्पणी पन्ने "
+
+#: comments.php:85
+#: functions.php:391
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%2$s पर %1$s "
+
+#: comments.php:85
+#: functions.php:391
+msgid "H:i"
+msgstr "H:i"
+
+#: comments.php:102
+msgid "No trackbacks yet."
+msgstr "अभी तक कोई ट्रेकबेक नहीं. "
+
+#: comments.php:116
+msgid "Comments are closed."
+msgstr "टिप्पणियाँ बन्द कर दी गई है. "
+
+#: comments.php:127
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "टिप्पणी करने के लिए आपको <a href=\"%s\">सत्रारम्भ (लॉगइन) </a>करना होगा. "
+
+#: comments.php:143
+msgid "Logged in as"
+msgstr "लॉगिन स्वरूप "
+
+#: comments.php:144
+msgid "Log out of this account"
+msgstr "इस खाते से सत्रांत (लॉगआउट) करें "
+
+#: comments.php:144
+msgid "Logout &raquo;"
+msgstr "लॉगआउट &raquo;"
+
+#: comments.php:150
+#, php-format
+msgid "Welcome back <strong>%s</strong>."
+msgstr "<strong>%s</strong> आपका फिर से स्वागत है.  "
+
+#: comments.php:151
+msgid "Change &raquo;"
+msgstr "Change &raquo;"
+
+#: comments.php:152
+msgid "Close &raquo;"
+msgstr "बन्द करें &raquo;"
+
+#: comments.php:159
+msgid "Name"
+msgstr "नाम "
+
+#: comments.php:159
+#: comments.php:163
+msgid "(required)"
+msgstr "(आवश्यक) "
+
+#: comments.php:163
+msgid "E-Mail (will not be published)"
+msgstr "ई-मेल (प्रकाशित नहीं होगा) "
+
+#: comments.php:167
+msgid "Website"
+msgstr "वेबसाइट "
+
+#: comments.php:184
+msgid "Subscribe to comments feed"
+msgstr "टिप्पणियों की फीड को सबस्क्राइब करें "
+
+#: comments.php:186
+msgid "Submit Comment"
+msgstr "टिप्पणी भेजें "
+
+#: footer.php:11
+msgid "Top"
+msgstr "ऊपर "
+
+#: footer.php:20
+msgid "Copyright &copy; "
+msgstr "सर्वाधिकार &copy; "
+
+#: footer.php:30
+msgid "Theme by <a href=\"http://www.neoease.com/\">mg12</a>. Valid <a href=\"http://validator.w3.org/check?uri=referer\">XHTML 1.1</a> and <a href=\"http://jigsaw.w3.org/css-validator/\">CSS 3</a>."
+msgstr "थीम द्वारा: <a href=\"http://www.neoease.com/\">mg12</a>. अधिकृत <a href=\"http://validator.w3.org/check?uri=referer\">XHTML 1.1</a> तथा <a href=\"http://jigsaw.w3.org/css-validator/\">CSS 3</a>."
+
+#: functions.php:132
+msgid "Current Theme Options"
+msgstr "वर्तमान थीम के विकल्प "
+
+#: functions.php:137
+msgid "Meta"
+msgstr "मेटा "
+
+#: functions.php:139
+msgid "Description:"
+msgstr "विवरण: "
+
+#: functions.php:143
+msgid "Keywords:"
+msgstr "की-वर्ड: "
+
+#: functions.php:143
+msgid "( Separate keywords with commas )"
+msgstr "(अल्पविराम द्वारा की-वर्ड को अलग करें) "
+
+#: functions.php:154
+msgid "Search"
+msgstr "खोजें "
+
+#: functions.php:158
+msgid "Using google custom search engine."
+msgstr "गूगल कस्टम सर्च इंजिन का उपयोग करते हुए. "
+
+#: functions.php:161
+msgid "CX:"
+msgstr "CX:"
+
+#: functions.php:164
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of <a href=\"http://www.google.com/coop/cse/\">Google Custom Search Engine</a>, and type the <code>value</code> here.<br/>For example: <code>014782006753236413342:1ltfrybsbz4</code>"
+msgstr "खोजें <a href=\"http://www.google.com/coop/cse/\">गूगल कस्टम सर्च इंजिन </a> के <strong>सर्च बॉक्स कोड</strong>में, <code>name=\"cx\"</code> तथा <code>value</code>  <code>वेल्यू</code> यहाँ टाइप करें .<br/>उदाहरण के लिए: <code>014782006753236413342:1ltfrybsbz4</code>"
+
+#: functions.php:173
+msgid "Menubar"
+msgstr "मेनूबार "
+
+#: functions.php:177
+msgid "Show pages as menu."
+msgstr "पन्नों को मेनू के रूप में दिखाएं "
+
+#: functions.php:181
+msgid "Show categories as menu."
+msgstr "श्रेणियों को मेनू के रूप में दिखाएं "
+
+#: functions.php:192
+msgid "Notice"
+msgstr "सूचना "
+
+#: functions.php:194
+#: functions.php:218
+msgid "HTML enabled"
+msgstr "HTML सक्रिय "
+
+#: functions.php:200
+msgid "This notice bar will display at the top of posts on homepage."
+msgstr "यह सूचना पट्टी मुख्य पन्ने पर प्रविष्टियों के ऊपर दिखेगी. "
+
+#: functions.php:216
+#: sidebar.php:52
+msgid "Showcase"
+msgstr "शो-केस "
+
+#: functions.php:222
+msgid "This showcase will display at the top of sidebar."
+msgstr "यह शो-केस साइडबार के ऊपर दिखेगी. "
+
+#: functions.php:224
+msgid "Who can see?"
+msgstr "कौन देख सकता है? "
+
+#: functions.php:227
+msgid "Registered Users"
+msgstr "पंजिकृत प्रयोक्ता (यूजर) "
+
+#: functions.php:231
+msgid "Commentator"
+msgstr "टिप्पणीकर्ता "
+
+#: functions.php:235
+msgid "Visitors"
+msgstr "पाठक(विजीटर) "
+
+#: functions.php:240
+msgid "Title:"
+msgstr "शीर्षक: "
+
+#: functions.php:256
+msgid "Categories & Tags"
+msgstr "श्रेणियाँ व टेग "
+
+#: functions.php:260
+msgid "Show categories on posts."
+msgstr "पोस्ट पर श्रेणियाँ दिखाएं.  "
+
+#: functions.php:264
+msgid "Show tags on posts."
+msgstr "प्रविष्टियों पर टेग दिखाएं. "
+
+#: functions.php:274
+msgid "Feed"
+msgstr "फीड "
+
+#: functions.php:278
+msgid "Custom feed."
+msgstr "कस्टम फीड "
+
+#: functions.php:281
+#: functions.php:288
+msgid "URL:"
+msgstr "URL:"
+
+#: functions.php:285
+msgid "Email feed."
+msgstr "फीड ई-मेल करें. "
+
+#: functions.php:295
+msgid "Save Changes"
+msgstr "परिवर्तन सहेजें "
+
+#: functions.php:395
+msgid "Reply"
+msgstr "उत्तर दें "
+
+#: functions.php:396
+msgid "Quote"
+msgstr "कोट "
+
+#: functions.php:401
+msgid "Advanced edit"
+msgstr "परिष्कृत संपादन "
+
+#: functions.php:407
+msgid "Your comment is awaiting moderation."
+msgstr "आपकी टिप्पणी अनुमोदन की प्रतिक्षा में है. "
+
+#: header.php:78
+#: single.php:7
+msgid "Home"
+msgstr "मुखपृष्ट "
+
+#: header.php:97
+#: header.php:104
+msgid "Switcher"
+msgstr "स्वीचर "
+
+#: links.php:22
+msgid "Edit links"
+msgstr "कड़ियों का सम्पादन "
+
+#: search.php:4
+msgid "Search Results"
+msgstr "खोज परिणाम "
+
+#: search.php:5
+#, php-format
+msgid "Keyword: &#8216;%1$s&#8217;"
+msgstr "की-वर्ड : &#8216;%1$s&#8217;"
+
+#: sidebar.php:25
+msgid "Subscribe to this blog..."
+msgstr "ब्लॉग सबस्क्राइब "
+
+#: sidebar.php:25
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed"
+msgstr "<abbr title=\"रीयली सिम्पल \">RSS</abbr> फीड "
+
+#: sidebar.php:27
+#: sidebar.php:28
+#: sidebar.php:29
+#: sidebar.php:30
+#: sidebar.php:31
+#: sidebar.php:32
+#: sidebar.php:33
+#: sidebar.php:34
+msgid "Subscribe with "
+msgstr "सबस्क्राइब द्वारा "
+
+#: sidebar.php:27
+msgid "Google"
+msgstr "गूगल "
+
+#: sidebar.php:28
+msgid "Youdao"
+msgstr "यूडाओ "
+
+#: sidebar.php:29
+msgid "Xian Guo"
+msgstr "Xian Guo"
+
+#: sidebar.php:30
+msgid "Zhua Xia"
+msgstr "Zhua Xia"
+
+#: sidebar.php:31
+msgid "My Yahoo!"
+msgstr "माइ याहू! "
+
+#: sidebar.php:32
+msgid "newsgator"
+msgstr "न्यूजगेटर "
+
+#: sidebar.php:33
+msgid "Bloglines"
+msgstr "ब्लॉगलाइंस "
+
+#: sidebar.php:34
+msgid "iNezha"
+msgstr "iNezha"
+
+#: sidebar.php:38
+msgid "Subscribe to this blog via email..."
+msgstr "ईमेल द्वारा इस ब्लॉग को सबस्क्राइब "
+
+#: sidebar.php:38
+msgid "Email feed"
+msgstr "ईमेल फीड "
+
+#: single.php:7
+msgid "Goto homepage"
+msgstr "मुख्यपन्ने पर जाएं "
+

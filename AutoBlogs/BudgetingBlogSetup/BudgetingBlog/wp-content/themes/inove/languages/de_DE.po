@@ -1,0 +1,495 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iNove 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-30 14:02+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: mg12 <wuzhao.mail@gmail.com>\n"
+"Language-Team: NeoEase <http://www.neoease.com/themes/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: D:\\workspace\\php5\\wordpress\\wp-content\\themes\\inove\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:8
+msgid "RSS 2.0 - all posts"
+msgstr "RSS 2.0 Artikel"
+
+#: 404.php:9
+msgid "RSS 2.0 - all comments"
+msgstr "RSS 2.0 Kommentare"
+
+#: 404.php:22
+msgid "Talker"
+msgstr "Talker"
+
+#: 404.php:25
+msgid "Welcome to 404 error page!"
+msgstr "Welcome to 404 error page!"
+
+#: 404.php:26
+msgid "Welcome to this customized error page. You've reached this page because you've clicked on a link that does not exist. This is probably our fault... but instead of showing you the basic '404 Error' page that is confusing and doesn't really explain anything, we've created this page to explain what went wrong."
+msgstr "Welcome to this customized error page. You've reached this page because you've clicked on a link that does not exist. This is probably our fault... but instead of showing you the basic '404 Error' page that is confusing and doesn't really explain anything, we've created this page to explain what went wrong."
+
+#: 404.php:27
+msgid "You can either (a) click on the 'back' button in your browser and try to navigate through our site in a different direction, or (b) click on the following link to go to homepage."
+msgstr "You can either (a) click on the 'back' button in your browser and try to navigate through our site in a different direction, or (b) click on the following link to go to homepage."
+
+#: 404.php:29
+msgid "Back to homepage &raquo;"
+msgstr "Zur&uuml;ck zur Homepage &raquo;"
+
+#: archive.php:5
+msgid "Search Results"
+msgstr "Suchergebnisse"
+
+#: archive.php:6
+#, php-format
+msgid "Keyword: &#8216;%1$s&#8217;"
+msgstr "Keyword: &#8216;%1$s&#8217;"
+
+#: archive.php:9
+msgid "Archive"
+msgstr "Archiv"
+
+#: archive.php:14
+#, php-format
+msgid "Archive for the &#8216;%1$s&#8217; Category"
+msgstr "Archiv f&uuml;r die Kategorie &#8216;%1$s&#8217;"
+
+#: archive.php:17
+#, php-format
+msgid "Posts Tagged &#8216;%1$s&#8217;"
+msgstr "Artikel Tagged &#8216;%1$s&#8217;"
+
+#: archive.php:20
+#: archive.php:23
+#: archive.php:26
+#, php-format
+msgid "Archive for %1$s"
+msgstr "Archiv f&uuml;r %1$s"
+
+#: archive.php:20
+#: archive.php:43
+#: archives.php:15
+#: comments.php:85
+#: functions.php:401
+#: index.php:18
+#: links.php:15
+#: single.php:15
+msgid "F jS, Y"
+msgstr "j. F Y"
+
+#: archive.php:23
+msgid "F, Y"
+msgstr "F, Y"
+
+#: archive.php:26
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:29
+msgid "Author Archive"
+msgstr "Autor Archiv"
+
+#: archive.php:32
+msgid "Blog Archives"
+msgstr "Blog Archiv"
+
+#: archive.php:45
+#: index.php:20
+msgid "No comments"
+msgstr "Keine Kommentare"
+
+#: archive.php:45
+#: index.php:20
+msgid "1 comment"
+msgstr "1 Kommentar"
+
+#: archive.php:45
+#: index.php:20
+#, php-format
+msgid "% comments"
+msgstr "% Kommentare"
+
+#: archive.php:46
+#: archives.php:21
+#: comments.php:89
+#: functions.php:409
+#: index.php:21
+#: links.php:24
+#: single.php:21
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: archive.php:52
+#: index.php:27
+msgid "Read more..."
+msgstr "Mehr..."
+
+#: archive.php:64
+#: archives.php:33
+#: index.php:40
+#: links.php:43
+#: single.php:39
+msgid "Sorry, no posts matched your criteria."
+msgstr "Sorry, es gibt keine entsprechenden Artikel."
+
+#: archive.php:72
+#: index.php:48
+msgid "Newer Entries"
+msgstr "Neuere Eintr&auml;ge"
+
+#: archive.php:73
+#: index.php:49
+msgid "Older Entries"
+msgstr "&Auml;ltere Eintr&auml;ge"
+
+#: archives.php:18
+#: links.php:18
+#: single.php:18
+msgid "Goto comments"
+msgstr "Kommentare"
+
+#: archives.php:19
+#: comments.php:27
+#: links.php:19
+#: single.php:19
+msgid "Leave a comment"
+msgstr "Einen Kommentar schreiben"
+
+#: comments.php:5
+msgid "Enter your password to view comments."
+msgstr "Bitte Passwort eingeben f&uuml;r Kommentare"
+
+#: comments.php:24
+msgid "Comments"
+msgstr "Kommentare"
+
+#: comments.php:25
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: comments.php:30
+msgid "Trackback"
+msgstr "Trackback"
+
+#: comments.php:54
+msgid "No comments yet."
+msgstr "Bisher keine Kommentare"
+
+#: comments.php:68
+msgid "Comment pages"
+msgstr "Kommentar Seiten"
+
+#: comments.php:85
+#: functions.php:401
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s, %2$s"
+
+#: comments.php:85
+#: functions.php:401
+msgid "H:i"
+msgstr "H:i"
+
+#: comments.php:102
+msgid "No trackbacks yet."
+msgstr "Bisher keine Trackbacks"
+
+#: comments.php:116
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen"
+
+#: comments.php:127
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Du musst Dich <a href=\"%s\">anmelden</a> um einen Kommentar zu schreiben"
+
+#: comments.php:143
+msgid "Logged in as"
+msgstr "Angemeldet als"
+
+#: comments.php:144
+msgid "Log out of this account"
+msgstr "Abmelden"
+
+#: comments.php:144
+msgid "Logout &raquo;"
+msgstr "Abmelden &raquo;"
+
+#: comments.php:150
+#, php-format
+msgid "Welcome back <strong>%s</strong>."
+msgstr "Willkommen zur&uuml;ck <strong>%s</strong>."
+
+#: comments.php:151
+msgid "Change &raquo;"
+msgstr "&Auml;ndern &raquo;"
+
+#: comments.php:152
+msgid "Close &raquo;"
+msgstr "Schlie&szlig;en &raquo;"
+
+#: comments.php:159
+msgid "Name"
+msgstr "Name"
+
+#: comments.php:159
+#: comments.php:163
+msgid "(required)"
+msgstr "(ben&ouml;tigt)"
+
+#: comments.php:163
+msgid "E-Mail (will not be published)"
+msgstr "E-Mail (wird nicht ver&ouml;ffentlicht)"
+
+#: comments.php:167
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:184
+msgid "Subscribe to comments feed"
+msgstr "Kommentare abonnieren"
+
+#: comments.php:186
+msgid "Submit Comment"
+msgstr "Kommentar ver&ouml;ffentlichen"
+
+#: functions.php:129
+#: functions.php:138
+msgid "Current Theme Options"
+msgstr "Aktuelle Themen Optionen"
+
+#: functions.php:143
+msgid "Meta"
+msgstr "Meta"
+
+#: functions.php:145
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#: functions.php:149
+msgid "Keywords:"
+msgstr "Keywords:"
+
+#: functions.php:149
+msgid "( Separate keywords with commas )"
+msgstr "( Keywords mit Komma trennen )"
+
+#: functions.php:160
+msgid "Search"
+msgstr "Suche"
+
+#: functions.php:164
+msgid "Using google custom search engine."
+msgstr "Google Suche benutzen."
+
+#: functions.php:167
+msgid "CX:"
+msgstr "CX:"
+
+#: functions.php:170
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of <a href=\"http://www.google.com/coop/cse/\">Google Custom Search Engine</a>, and type the <code>value</code> here.<br/>For example: <code>014782006753236413342:1ltfrybsbz4</code>"
+msgstr "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of <a href=\"http://www.google.com/coop/cse/\">Google Custom Search Engine</a>, and type the <code>value</code> here.<br/>For example: <code>014782006753236413342:1ltfrybsbz4</code>"
+
+#: functions.php:179
+msgid "Menubar"
+msgstr "Men&uuml;bar"
+
+#: functions.php:183
+msgid "Show pages as menu."
+msgstr "Zeige Seiten als Men&uuml;."
+
+#: functions.php:187
+msgid "Show categories as menu."
+msgstr "Zeige Kategorien als Men&uuml;."
+
+#: functions.php:198
+msgid "Notice"
+msgstr "Notiz"
+
+#: functions.php:200
+#: functions.php:224
+msgid "HTML enabled"
+msgstr "HTML enabled"
+
+#: functions.php:206
+msgid "This notice bar will display at the top of posts on homepage."
+msgstr "Dieses Notizfeld wird am Anfang der Artikel der Homepage dargestellt."
+
+#: functions.php:222
+#: sidebar.php:52
+msgid "Showcase"
+msgstr "Showcase"
+
+#: functions.php:228
+msgid "This showcase will display at the top of sidebar."
+msgstr "Dieses Showcase wird am Anfang der Sidebar dargestellt."
+
+#: functions.php:230
+msgid "Who can see?"
+msgstr "Who can see?"
+
+#: functions.php:233
+msgid "Registered Users"
+msgstr "Registrierte Benutzer"
+
+#: functions.php:237
+msgid "Commentator"
+msgstr "Kommentator"
+
+#: functions.php:241
+msgid "Visitors"
+msgstr "Besucher"
+
+#: functions.php:246
+msgid "Title:"
+msgstr "Titel:"
+
+#: functions.php:262
+msgid "Posts"
+msgstr "Artikel"
+
+#: functions.php:266
+msgid "Show author on posts."
+msgstr "Autor zu Artikeln anzeigen"
+
+#: functions.php:270
+msgid "Show categories on posts."
+msgstr "Kategorien zu Artikeln anzeigen"
+
+#: functions.php:274
+msgid "Show tags on posts."
+msgstr "Tags zu Artikeln anzeigen"
+
+#: functions.php:284
+msgid "Feed"
+msgstr "Feed"
+
+#: functions.php:288
+msgid "Custom feed."
+msgstr "Custom Feed."
+
+#: functions.php:291
+#: functions.php:298
+msgid "URL:"
+msgstr "URL:"
+
+#: functions.php:295
+msgid "Email feed."
+msgstr "Email Feed."
+
+#: functions.php:305
+msgid "Save Changes"
+msgstr "&Auml;nderungen speichern"
+
+#: functions.php:405
+msgid "Reply"
+msgstr "Antwort"
+
+#: functions.php:406
+msgid "Quote"
+msgstr "Zitat"
+
+#: functions.php:411
+msgid "Advanced edit"
+msgstr "Bearbeiten"
+
+#: functions.php:417
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: links.php:22
+msgid "Edit links"
+msgstr "Links bearbeiten"
+
+#: sidebar.php:25
+msgid "Subscribe to this blog..."
+msgstr "Diesen Blog abonnieren..."
+
+#: sidebar.php:25
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed"
+
+#: sidebar.php:27
+#: sidebar.php:28
+#: sidebar.php:29
+#: sidebar.php:30
+#: sidebar.php:31
+#: sidebar.php:32
+#: sidebar.php:33
+#: sidebar.php:34
+msgid "Subscribe with "
+msgstr "Abonnieren mit"
+
+#: sidebar.php:27
+msgid "Google"
+msgstr "Google"
+
+#: sidebar.php:28
+msgid "Youdao"
+msgstr "Youdao"
+
+#: sidebar.php:29
+msgid "Xian Guo"
+msgstr "Xian Guo"
+
+#: sidebar.php:30
+msgid "Zhua Xia"
+msgstr "Zhua Xia"
+
+#: sidebar.php:31
+msgid "My Yahoo!"
+msgstr "My Yahoo!"
+
+#: sidebar.php:32
+msgid "newsgator"
+msgstr "newsgator"
+
+#: sidebar.php:33
+msgid "Bloglines"
+msgstr "Bloglines"
+
+#: sidebar.php:34
+msgid "iNezha"
+msgstr "iNezha"
+
+#: sidebar.php:38
+msgid "Subscribe to this blog via email..."
+msgstr "Diesen Blog per Email abonnieren..."
+
+#: sidebar.php:38
+msgid "Email feed"
+msgstr "Email feed"
+
+#: single.php:7
+msgid "Goto homepage"
+msgstr "Gehe zur Homepage"
+
+#: single.php:7
+msgid "Home"
+msgstr "Home"
+
+#: templates/end.php:3
+msgid "Top"
+msgstr "Oben"
+
+#: templates/end.php:12
+msgid "Copyright &copy; "
+msgstr "Copyright &copy; "
+
+#: templates/end.php:22
+msgid "Theme by <a href=\"http://www.neoease.com/\">mg12</a>. Valid <a href=\"http://validator.w3.org/check?uri=referer\">XHTML 1.1</a> and <a href=\"http://jigsaw.w3.org/css-validator/\">CSS 3</a>."
+msgstr "Theme by <a href=\"http://www.neoease.com/\">mg12</a>. Valid <a href=\"http://validator.w3.org/check?uri=referer\">XHTML 1.1</a> and <a href=\"http://jigsaw.w3.org/css-validator/\">CSS 3</a>."
+
+#: templates/header.php:30
+#: templates/header.php:37
+msgid "Switcher"
+msgstr "Switcher"
+
