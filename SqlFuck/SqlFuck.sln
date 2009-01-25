@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlFuck", "SqlFuck\SqlFuck.csproj", "{EA978236-FC4A-4C4D-81DD-99D3783A87CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlFuckTests", "SqlFuckTests\SqlFuckTests.csproj", "{26B176B9-DDFD-4ABB-81A7-001EF87A63DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA978236-FC4A-4C4D-81DD-99D3783A87CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA978236-FC4A-4C4D-81DD-99D3783A87CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA978236-FC4A-4C4D-81DD-99D3783A87CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA978236-FC4A-4C4D-81DD-99D3783A87CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B176B9-DDFD-4ABB-81A7-001EF87A63DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B176B9-DDFD-4ABB-81A7-001EF87A63DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B176B9-DDFD-4ABB-81A7-001EF87A63DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B176B9-DDFD-4ABB-81A7-001EF87A63DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
