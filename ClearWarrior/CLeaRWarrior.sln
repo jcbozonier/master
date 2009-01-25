@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearWarrior.UI", "CLeaRWarrior\ClearWarrior.UI.csproj", "{2A419940-9EFC-4B1F-969A-F954789B891C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearWarrior.Specs", "CLeaRWarrior.Specs\ClearWarrior.Specs.csproj", "{799014BF-1F87-4839-9D8F-7BAC9AD4A9D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearWarrior.Entities", "Entities\ClearWarrior.Entities.csproj", "{294E2EBC-3FD9-4E1B-B3C1-C387909DACF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A419940-9EFC-4B1F-969A-F954789B891C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A419940-9EFC-4B1F-969A-F954789B891C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A419940-9EFC-4B1F-969A-F954789B891C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A419940-9EFC-4B1F-969A-F954789B891C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799014BF-1F87-4839-9D8F-7BAC9AD4A9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799014BF-1F87-4839-9D8F-7BAC9AD4A9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799014BF-1F87-4839-9D8F-7BAC9AD4A9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799014BF-1F87-4839-9D8F-7BAC9AD4A9D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294E2EBC-3FD9-4E1B-B3C1-C387909DACF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294E2EBC-3FD9-4E1B-B3C1-C387909DACF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294E2EBC-3FD9-4E1B-B3C1-C387909DACF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294E2EBC-3FD9-4E1B-B3C1-C387909DACF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
