@@ -8,6 +8,7 @@ namespace ClearWarrior.Entities
     public class RoomUnit
     {
         public IEntity Entity;
+        public IEntity PreviousEntity;
 
         public RoomUnit()
         {

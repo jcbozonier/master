@@ -109,13 +109,14 @@ namespace ClearWarrior.Entities
             return unitRows;
         }
 
-        internal WorldCoordinates GetCoordinatesOf(IEntity TheWarrior)
+        internal WorldCoordinates GetCoordinatesOf(IEntity entity)
         {
             for (var row = 0; row < _FloorPlan.Count; row++)
             {
                 for (var col = 0; col < _FloorPlan[0].Count; col++)
                 {
-                    if (_FloorPlan[row][col].Entity == TheWarrior)
+                    if (_FloorPlan[row][col].Entity == entity ||
+                        _FloorPlan[row][col].PreviousEntity == entity)
                     {
                         return new WorldCoordinates(col, row);
                     }
@@ -127,8 +128,21 @@ namespace ClearWarrior.Entities
 
         internal void MoveEntity(WorldCoordinates oldCoordinates, WorldCoordinates newCoordinates)
         {
-            var entityToMove = _FloorPlan[oldCoordinates.Longitude][oldCoordinates.Latitude].Entity;
-            _FloorPlan[oldCoordinates.Longitude][oldCoordinates.Latitude].Entity = null;
+            IEntity entityToMove;
+
+            if (_FloorPlan[oldCoordinates.Longitude][oldCoordinates.Latitude].PreviousEntity != null)
+            {
+                entityToMove = _FloorPlan[oldCoordinates.Longitude][oldCoordinates.Latitude].PreviousEntity;
+                _FloorPlan[oldCoordinates.Longitude][oldCoordinates.Latitude].PreviousEntity = null;
+            }
+            else
+            {
+                entityToMove = _FloorPlan[oldCoordinates.Longitude][oldCoordinates.Latitude].Entity;
+                _FloorPlan[oldCoordinates.Longitude][oldCoordinates.Latitude].Entity = null;
+            }
+
+            var currentEntityInNewUnit = _FloorPlan[newCoordinates.Longitude][newCoordinates.Latitude].Entity;
+            _FloorPlan[newCoordinates.Longitude][newCoordinates.Latitude].PreviousEntity = currentEntityInNewUnit;
             _FloorPlan[newCoordinates.Longitude][newCoordinates.Latitude].Entity = entityToMove;
         }
 
@@ -147,6 +161,11 @@ namespace ClearWarrior.Entities
             var roomUnit = GetUnitAt(coordinates);
 
             roomUnit.Entity = null;
+        }
+
+        public void Place(ISentientEntity entity, WorldCoordinates coordinates)
+        {
+            _FloorPlan[coordinates.Longitude][coordinates.Latitude].Entity = entity;
         }
     }
 }

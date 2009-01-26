@@ -3,10 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ClearWarrior.Entities;
+using ClearWarrior.Specs.SpecUnit;
 using NUnit.Framework;
 
 namespace ClearWarrior.Specs.Inter_Entity_Interactions
 {
+    [TestFixture]
+    public class When_an_entity_tries_to_move_to_spot_another_is_moving_from : using_two_entities_in_simple_empty_room
+    {
+        [Test]
+        public void Other_entity_should_be_in_new_spot()
+        {
+            TheWorld.GetCoordinatesOf(Enemy, TheRoom).ShouldEqual(new WorldCoordinates(1, 1));
+        }
+
+        [Test]
+        public void It_should_move_into_that_spot()
+        {
+            TheWorld.GetCoordinatesOf(TheWarrior, TheRoom).ShouldEqual(new WorldCoordinates(2, 1));
+        }
+
+        public override void Context()
+        {
+            TheWarrior.RequestToSend(new EntityRequest(ActionRequest.WalkForward));
+            Enemy.RequestToSend(new EntityRequest(ActionRequest.WalkForward));
+        }
+
+        public override void Because()
+        {
+            TheWorld.StepForwardOneTimeUnit();
+        }
+    }
 
     [TestFixture]
     public class When_an_entity_tries_to_move_through_another : using_two_entities_in_simple_empty_room
@@ -14,12 +41,17 @@ namespace ClearWarrior.Specs.Inter_Entity_Interactions
         [Test]
         public void It_should_not_move_any_further_units_in_that_direction()
         {
-            
+            TheWorld.GetCoordinatesOf(TheWarrior, TheRoom).ShouldEqual(new WorldCoordinates(2, 2));
+        }
+
+        public override void Context()
+        {
+            TheWarrior.RequestToSend(new EntityRequest(ActionRequest.WalkForward));
         }
 
         public override void Because()
         {
-            throw new System.NotImplementedException();
+            TheWorld.StepForwardOneTimeUnit();
         }
     }
 
@@ -28,24 +60,30 @@ namespace ClearWarrior.Specs.Inter_Entity_Interactions
         protected Room TheRoom;
         protected DumbBot TheWarrior;
         protected World TheWorld;
+        protected DumbBot Enemy;
 
         [TestFixtureSetUp]
         public void Setup()
         {
             TheWorld = new World();
-
             // Create a 3 x 3 room
             // which is really a 4 x 4 because the walls occupy
             // a single square unit a piece.
             var floorPlan = Room.CreateEmptyRoom(5, 5);
             floorPlan[2][2] = new EntryPoint();
-            floorPlan[1][2] = new RoomUnit(new DumbBot());
 
             TheRoom = TheWorld.CreateRoom(floorPlan);
             
             TheWarrior = new DumbBot();
+            Enemy = new EnemyBot();
+
             TheWorld.CreateEntity(TheWarrior);
+            TheWorld.CreateEntity(Enemy);
+
             TheWorld.EnterRoom(TheWarrior, TheRoom);
+            TheWorld.EnterRoom(Enemy, TheRoom, new WorldCoordinates(2,1));
+
+            Enemy.CurrentDirection = AbsoluteDirections.West;
 
             Context();
             Because();
@@ -57,6 +95,11 @@ namespace ClearWarrior.Specs.Inter_Entity_Interactions
         }
 
         public abstract void Because();
+    }
+
+    public class EnemyBot : DumbBot
+    {
+        
     }
 
     public class DumbBot : ISentientEntity

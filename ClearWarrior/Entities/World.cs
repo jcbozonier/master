@@ -45,6 +45,12 @@ namespace ClearWarrior.Entities
             TheRoom.PlaceAtEntryPoint(entity);
         }
 
+        public void EnterRoom(ISentientEntity entity, Room room, WorldCoordinates coordinates)
+        {
+            entity.CurrentDirection = AbsoluteDirections.North;
+            room.Place(entity, coordinates);
+        }
+
         public void MoveForward(ISentientEntity TheWarrior, Room TheRoom)
         {
             var oldCoordinates = TheRoom.GetCoordinatesOf(TheWarrior);
@@ -200,9 +206,12 @@ namespace ClearWarrior.Entities
         {
             // Get requests from entities
             var worldRequests = _GetRequestsFor(_Entities);
+
             // Validate requests by removing invalid requests
             var validRequests = _Validate(worldRequests);
+
             var responses = _Process(validRequests);
+
             // Send the responses to the validated entity requests
             _Send(responses);
         }
@@ -260,16 +269,58 @@ namespace ClearWarrior.Entities
             var validRequests = new List<WorldRequest>();
             foreach(var request in requests)
             {
-                if(_IsValid(request)) 
+                if(_IsValid(request, requests)) 
                     validRequests.Add(request);
             }
 
             return validRequests;
         }
 
-        private bool _IsValid(WorldRequest request)
+        private bool _IsValid(WorldRequest request, List<WorldRequest> proposedRequests)
         {
-            return true;
+            switch(request.Request)
+            {
+                case ActionRequest.WalkForward:
+                    var entity = request.Entity as ISentientEntity;
+                    var entityLocation = GetCoordinatesOf(entity, _TheRoom);
+                    var proposedUnit = _GetEntityAt(_TheRoom, entityLocation, entity.CurrentDirection, 1);
+                    
+                    // If no entity in unit then we're set!
+                    if(proposedUnit == null) return true;
+                    // If there's an entity in the unit but it's going to
+                    // move then we're set!
+                    if(proposedUnit != null && _WillMove(proposedUnit, proposedRequests))
+                    {
+                        return true;
+                    }
+
+                    return (proposedUnit == null);
+                default:
+                    return true;
+            }
+        }
+
+        private bool _WillMove(IEntity unit, List<WorldRequest> proposedRequests)
+        {
+            WorldRequest unitRequest = null;
+
+            foreach(var request in proposedRequests)
+            {
+                if(request.Entity == unit)
+                {
+                    unitRequest = request;
+                    break;
+                }
+            }
+
+            if(unitRequest == null) return false;
+
+            if(unitRequest.Request == ActionRequest.WalkForward)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         private List<WorldRequest> _GetRequestsFor(List<IEntity> entities)
@@ -283,6 +334,8 @@ namespace ClearWarrior.Entities
 
             return worldRequests;
         }
+
+        
     }
 
     public class EntityRequest
@@ -338,7 +391,9 @@ namespace ClearWarrior.Entities
         public WorldRequest(IEntity entity, EntityRequest request)
         {
             Entity = entity;
-            Request = request.Request;
+            Request = (request == null)
+                          ? ActionRequest.None
+                          : request.Request;
         }
     }
 
