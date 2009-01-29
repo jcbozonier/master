@@ -54,7 +54,7 @@ namespace HelloWorldNeuralNetworks
             }
 
             ProcessAndGetNext(inputs);
-            return output.Value >= 1;
+            return output.IsThresholdTriggered();
         }
 
         private void ProcessAndGetNext(List<Neuron> nextLayer)
