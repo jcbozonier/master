@@ -155,7 +155,7 @@ namespace ClearWarrior.Entities
             throw new GeneralGameException("The direction could not be computed. This makes no sense at all.");
         }
 
-        private WorldCoordinates _GetCurrentLocation(Warrior TheWarrior, Room TheRoom)
+        private WorldCoordinates _GetCurrentLocation(IEntity TheWarrior, Room TheRoom)
         {
             WorldCoordinates warriorsLocation;
 
@@ -283,44 +283,71 @@ namespace ClearWarrior.Entities
                 case ActionRequest.WalkForward:
                     var entity = request.Entity as ISentientEntity;
                     var entityLocation = GetCoordinatesOf(entity, _TheRoom);
-                    var proposedUnit = _GetEntityAt(_TheRoom, entityLocation, entity.CurrentDirection, 1);
+                    var proposedUnit = _GetEntityAt(_TheRoom, entityLocation, entity.CurrentDirection, 1) as ISentientEntity;
                     
                     // If no entity in unit then we're set!
                     if(proposedUnit == null) return true;
                     // If there's an entity in the unit but it's going to
                     // move then we're set!
-                    if(proposedUnit != null && _WillMove(proposedUnit, proposedRequests))
+                    if(proposedUnit != null && _WillMoveToDifferentUnit(entity, proposedUnit, proposedRequests))
                     {
                         return true;
                     }
 
-                    return (proposedUnit == null);
+                    return false;
                 default:
                     return true;
             }
         }
 
-        private bool _WillMove(IEntity unit, List<WorldRequest> proposedRequests)
+        private bool _WillMoveToDifferentUnit(ISentientEntity entity, ISentientEntity unit, List<WorldRequest> proposedRequests)
+        {
+            WorldRequest unitRequest = GetEntityRequest(unit, proposedRequests);
+            WorldRequest entityRequest = GetEntityRequest(entity, proposedRequests);
+
+            if(unitRequest == null) return false;
+
+            //if(_PredictOutcome(unitRequest) == _PredictOutcome(entityRequest))
+            //{
+            //    return true;
+            //}
+
+            // Will other entity walk onto this entity
+            var entityPossibility = _GetEntityAt(_TheRoom, _GetCurrentLocation(unit, _TheRoom), unit.CurrentDirection, 1);
+
+            if( entityPossibility == entity)
+            {
+                return false;
+            }
+
+            //Should be false when entity tries to move thru another.
+            return true;
+        }
+
+        private WorldCoordinates _PredictOutcome(WorldRequest request)
+        {
+            if(request.Request == ActionRequest.WalkForward)
+            {
+
+                //return _GetCoordinatesAt(_TheRoom, _GetCurrentLocation(request.Entity, _TheRoom), request.Entity);
+            }
+
+            return null;
+        }
+
+        private WorldRequest GetEntityRequest(ISentientEntity entity, List<WorldRequest> proposedRequests)
         {
             WorldRequest unitRequest = null;
 
             foreach(var request in proposedRequests)
             {
-                if(request.Entity == unit)
+                if(request.Entity == entity)
                 {
                     unitRequest = request;
                     break;
                 }
             }
-
-            if(unitRequest == null) return false;
-
-            if(unitRequest.Request == ActionRequest.WalkForward)
-            {
-                return true;
-            }
-
-            return false;
+            return unitRequest;
         }
 
         private List<WorldRequest> _GetRequestsFor(List<IEntity> entities)

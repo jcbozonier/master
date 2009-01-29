@@ -9,6 +9,36 @@ using NUnit.Framework;
 namespace ClearWarrior.Specs.Inter_Entity_Interactions
 {
     [TestFixture]
+    public class When_two_entities_try_switch_positions : using_two_entities_in_simple_empty_room
+    {
+        [Test]
+        public void Entity_A_should_not_move()
+        {
+            TheWorld.GetCoordinatesOf(Enemy, TheRoom).ShouldEqual(new WorldCoordinates(2, 1));
+        }
+
+        [Test]
+        public void Entity_B_should_not_move()
+        {
+            TheWorld.GetCoordinatesOf(TheWarrior, TheRoom).ShouldEqual(new WorldCoordinates(2, 2));
+        }
+
+        public override void Context()
+        {
+            TheWarrior.CurrentDirection = AbsoluteDirections.North;
+            Enemy.CurrentDirection = AbsoluteDirections.South;
+
+            TheWarrior.RequestToSend(new EntityRequest(ActionRequest.WalkForward));
+            Enemy.RequestToSend(new EntityRequest(ActionRequest.WalkForward));
+        }
+
+        public override void Because()
+        {
+            TheWorld.StepForwardOneTimeUnit();
+        }
+    }
+
+    [TestFixture]
     public class When_an_entity_tries_to_move_to_spot_another_is_moving_from : using_two_entities_in_simple_empty_room
     {
         [Test]
