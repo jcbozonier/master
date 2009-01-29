@@ -52,6 +52,7 @@
     <Compile Include="AndNetworkTests.cs" />
     <Compile Include="OrNetworkTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XorNetworkTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HelloWorldNeuralNetworks\HelloWorldNeuralNetworks.csproj">
