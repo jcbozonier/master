@@ -11,24 +11,7 @@ namespace SimpleMaths
 
         public HopfieldNetwork(int nodeCount)
         {
-            double[][] matrix = _GetEmptyMatrix(nodeCount);
-            _WeightMatrix = new Matrix(matrix);
-        }
-
-        private double[][] _GetEmptyMatrix(int nodeCount)
-        {
-            var matrix = new double[nodeCount][];
-
-            for (var row = 0; row < nodeCount; row++)
-            {
-                matrix[row] = new double[nodeCount];
-
-                for(var col=0; col<nodeCount;col++)
-                {
-                    matrix[row][col] = -1.0;
-                }
-            }
-            return matrix;
+            _WeightMatrix = Matrix.CreateEmptySquareMatrix(nodeCount);
         }
 
         public void Train(HopfieldPattern pattern)
@@ -39,12 +22,11 @@ namespace SimpleMaths
         /// <summary>
         /// Takes in a Hopfield pattern and returns the pattern it most closely matches.
         /// </summary>
-        /// <param name="hopfieldPattern"></param>
+        /// <param name="inputPattern"></param>
         /// <returns></returns>
-        public HopfieldPattern Recognize(HopfieldPattern hopfieldPattern)
+        public HopfieldPattern Recognize(HopfieldPattern inputPattern)
         {
-            var inputPattern = hopfieldPattern;
-            var recognizedPattern = HopfieldPattern.CreateEmptyPattern(hopfieldPattern.Length);
+            var recognizedPattern = HopfieldPattern.CreateEmptyPattern(inputPattern.Length);
 
             // Get value from each column and place it in an array.
             for(var colIndex=0; colIndex < inputPattern.Length; colIndex++)

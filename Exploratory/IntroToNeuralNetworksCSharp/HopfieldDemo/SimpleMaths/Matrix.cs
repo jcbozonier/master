@@ -70,5 +70,27 @@ namespace SimpleMaths
 
             return new Matrix(result);
         }
+
+        internal static Matrix CreateEmptySquareMatrix(int rowColumnCount)
+        {
+            double[][] matrix = _GetEmptyMatrix(rowColumnCount);
+            return new Matrix(matrix);
+        }
+
+        private static double[][] _GetEmptyMatrix(int nodeCount)
+        {
+            var matrix = new double[nodeCount][];
+
+            for (var row = 0; row < nodeCount; row++)
+            {
+                matrix[row] = new double[nodeCount];
+
+                for (var col = 0; col < nodeCount; col++)
+                {
+                    matrix[row][col] = -1.0;
+                }
+            }
+            return matrix;
+        }
     }
 }
