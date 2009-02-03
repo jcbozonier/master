@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HopfieldDemo", "HopfieldDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specs", "Specs\Specs.csproj", "{E7DF367B-934A-44CB-AE84-F3BD357B53E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMaths", "SimpleMaths\SimpleMaths.csproj", "{B9369F25-AE9D-4923-A495-9F076A755249}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{E7DF367B-934A-44CB-AE84-F3BD357B53E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7DF367B-934A-44CB-AE84-F3BD357B53E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7DF367B-934A-44CB-AE84-F3BD357B53E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9369F25-AE9D-4923-A495-9F076A755249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9369F25-AE9D-4923-A495-9F076A755249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9369F25-AE9D-4923-A495-9F076A755249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9369F25-AE9D-4923-A495-9F076A755249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
