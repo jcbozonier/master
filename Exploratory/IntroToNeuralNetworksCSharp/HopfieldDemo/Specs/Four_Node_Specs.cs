@@ -45,8 +45,8 @@ namespace Specs
         [TestFixtureSetUp]
         public void Setup()
         {
-            Pattern1 = new HopfieldPattern(new[] { 0.0, 1.0, 0.0, 1.0 });
-            Pattern2 = new HopfieldPattern(new[] { 1.0, 0.0, 0.0, 1.0 });
+            Pattern1 = new HopfieldPattern(0.0, 1.0, 0.0, 1.0);
+            Pattern2 = new HopfieldPattern(1.0, 0.0, 0.0, 1.0);
 
             Network = new HopfieldNetwork(4);
 

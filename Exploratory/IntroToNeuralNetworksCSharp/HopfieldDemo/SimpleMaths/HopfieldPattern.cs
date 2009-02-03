@@ -9,8 +9,8 @@ namespace SimpleMaths
     {
         private double[] _MatrixArray;
 
-        public HopfieldPattern(double[] matrixArray)
-        {
+        public HopfieldPattern(params double[] matrixArray)
+        {   
             for (var i = 0; i < matrixArray.Length; i++ )
             {
                 matrixArray[i] = (matrixArray[i] <= 0) ? -1 : 1;
@@ -19,6 +19,10 @@ namespace SimpleMaths
             _MatrixArray = matrixArray;
         }
 
+        /// <summary>
+        /// Converts the pattern to a weight matrix that can be used as a contribution matrix.
+        /// </summary>
+        /// <returns></returns>
         internal double[][] GetWeightMatrix()
         {
             var result = new double[_MatrixArray.Length][];
