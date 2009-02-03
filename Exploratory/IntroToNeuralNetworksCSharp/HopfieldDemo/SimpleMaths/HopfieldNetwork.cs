@@ -43,26 +43,27 @@ namespace SimpleMaths
         /// <returns></returns>
         public HopfieldPattern Recognize(HopfieldPattern hopfieldPattern)
         {
-            var pattern = hopfieldPattern.GetArray();
-            var result = new double[pattern.Length];
+            var inputPattern = hopfieldPattern;
+            var recognizedPattern = HopfieldPattern.CreateEmptyPattern(hopfieldPattern.Length);
+
             // Get value from each column and place it in an array.
-            for(var colIndex=0; colIndex < pattern.Length; colIndex++)
+            for(var colIndex=0; colIndex < inputPattern.Length; colIndex++)
             {
                 // We need to sum the totals for each column
                 var columnResult = 0.0;
 
-                for(var rowIndex=0; rowIndex < pattern.Length; rowIndex++)
+                for(var rowIndex=0; rowIndex < inputPattern.Length; rowIndex++)
                 {
-                    if (pattern[rowIndex] > 0)
+                    if (inputPattern[rowIndex] > 0)
                         columnResult += _WeightMatrix.GetValue(rowIndex, colIndex);
                 }
 
                 // Then place each column's scalar result in the result vector.
-                result[colIndex] = columnResult;
+                recognizedPattern[colIndex] = columnResult;
             }
 
             // We have the result vector so return it as a pattern.
-            return new HopfieldPattern(result);
+            return recognizedPattern;
         }
     }
 }
