@@ -7,16 +7,16 @@ namespace SimpleMaths
 {
     public class HopfieldPattern
     {
-        private double[] _MatrixArray;
+        private double[] _Pattern;
 
-        public HopfieldPattern(params double[] matrixArray)
+        public HopfieldPattern(params double[] pattern)
         {   
-            for (var i = 0; i < matrixArray.Length; i++ )
+            for (var i = 0; i < pattern.Length; i++ )
             {
-                matrixArray[i] = (matrixArray[i] <= 0) ? -1 : 1;
+                pattern[i] = (pattern[i] <= 0) ? -1 : 1;
             }
 
-            _MatrixArray = matrixArray;
+            _Pattern = pattern;
         }
 
         /// <summary>
@@ -25,17 +25,17 @@ namespace SimpleMaths
         /// <returns></returns>
         internal double[][] GetWeightMatrix()
         {
-            var result = new double[_MatrixArray.Length][];
+            var result = new double[_Pattern.Length][];
 
-            for (var row = 0; row < _MatrixArray.Length; row++ )
+            for (var row = 0; row < _Pattern.Length; row++ )
             {
-                result[row] = new double[_MatrixArray.Length];
-                for(var col=0; col<_MatrixArray.Length; col++)
-                {
+                result[row] = new double[_Pattern.Length];
 
+                for(var col=0; col < _Pattern.Length; col++)
+                {
                     result[row][col] = (row == col) 
                         ? 0 
-                        : _MatrixArray[row]*_MatrixArray[col];
+                        : _Pattern[row]*_Pattern[col];
                 }
             }
 
@@ -44,7 +44,7 @@ namespace SimpleMaths
 
         internal double[] GetArray()
         {
-            return _MatrixArray;
+            return _Pattern;
         }
 
         public override bool Equals(object obj)
@@ -56,7 +56,7 @@ namespace SimpleMaths
 
             for (var i = 0; i < GetArray().Length; i++ )
             {
-                equal &= _MatrixArray[i] == pattern.GetArray()[i];
+                equal &= _Pattern[i] == pattern.GetArray()[i];
             }
 
             return equal;
@@ -66,7 +66,7 @@ namespace SimpleMaths
         {
             var result = new StringBuilder();
             
-            foreach(var number in _MatrixArray)
+            foreach(var number in _Pattern)
             {
                 result.Append(number.ToString() + ",");
             }
