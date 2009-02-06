@@ -16,7 +16,7 @@ namespace SimpleMaths
 
         public void Train(HopfieldPattern pattern)
         {
-            _WeightMatrix = _WeightMatrix.Multiply(new Matrix(pattern.GetWeightMatrix()));
+            _WeightMatrix = _WeightMatrix.Add(new Matrix(pattern.GetWeightMatrix()));
         }
 
         /// <summary>
@@ -36,12 +36,17 @@ namespace SimpleMaths
 
                 for(var rowIndex=0; rowIndex < inputPattern.Length; rowIndex++)
                 {
-                    if (inputPattern[rowIndex] > 0)
-                        columnResult += _WeightMatrix.GetValue(rowIndex, colIndex);
+                    columnResult += _WeightMatrix.GetValue(rowIndex, colIndex) * inputPattern[rowIndex];
                 }
 
                 // Then place each column's scalar result in the result vector.
                 recognizedPattern[colIndex] = columnResult;
+            }
+
+            // switch from bipolar form
+            for (var i = 0; i < recognizedPattern.Length; i++)
+            {
+                recognizedPattern[i] = recognizedPattern[i] < 0 ? 0 : 1;
             }
 
             // We have the result vector so return it as a pattern.
