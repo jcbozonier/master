@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+import os
+
+def build_bot(program, solution_path):
+	arguments = [program, '"' + solution_path + '" /Build "Release"']
+	os.spawnv(os.P_WAIT, program, tuple(arguments))
+
+# Have git pull the latest changes into the folder.
+
+bot_root_path = "C:\\Code\\BotRepo\\Bots\\"
+program = r'C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe'
+
+bot_folders = [os.path.join(bot_root_path, f) for f in os.listdir(bot_root_path) if os.path.isdir(os.path.join(bot_root_path, f))]
+
+for folder in bot_folders:
+    print folder
+
+for folder_path in bot_folders:
+    solution_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f)) and f.endswith('.sln')]
+    if solution_files != None:
+        print solution_files[0] + " " + str(len(solution_files))
+        build_bot(program, solution_files[0])
