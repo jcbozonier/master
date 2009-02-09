@@ -22,6 +22,31 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
+            <ToggleButton Grid.Row="0" Grid.Column="0" x:Name="button1">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="0" Grid.Column="1" x:Name="button2">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="0" Grid.Column="2" x:Name="button3">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="0" Grid.Column="3" x:Name="button4">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="0" Grid.Column="4" x:Name="button5">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="1" Grid.Column="0" x:Name="button6">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="1" Grid.Column="1" x:Name="button7">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="1" Grid.Column="2" x:Name="button8">Yup</ToggleButton>
+            <ToggleButton Grid.Row="1" Grid.Column="3" x:Name="button9">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="1" Grid.Column="4" x:Name="button10">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="2" Grid.Column="0" x:Name="button11">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="2" Grid.Column="1" x:Name="button12">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="2" Grid.Column="2" x:Name="button13">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="2" Grid.Column="3" x:Name="button14">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="2" Grid.Column="4" x:Name="button15">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="3" Grid.Column="0" x:Name="button16">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="3" Grid.Column="1" x:Name="button17">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="3" Grid.Column="2" x:Name="button18">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="3" Grid.Column="3" x:Name="button19">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="3" Grid.Column="4" x:Name="button20">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="4" Grid.Column="0" x:Name="button21">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="4" Grid.Column="1" x:Name="button22">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="4" Grid.Column="2" x:Name="button23">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="4" Grid.Column="3" x:Name="button24">Clicky</ToggleButton>
+            <ToggleButton Grid.Row="4" Grid.Column="4" x:Name="button25">Clicky</ToggleButton>
         </Grid>
         <Grid x:Name="grid1" Grid.Row="1" >
             
