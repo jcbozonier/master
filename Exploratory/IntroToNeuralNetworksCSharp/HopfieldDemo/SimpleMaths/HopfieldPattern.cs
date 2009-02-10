@@ -61,7 +61,7 @@ namespace SimpleMaths
             return _Pattern;
         }
 
-        internal double this[int i]
+        public double this[int i]
         {
             get
             {

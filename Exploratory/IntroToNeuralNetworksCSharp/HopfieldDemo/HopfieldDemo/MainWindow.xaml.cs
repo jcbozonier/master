@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SimpleMaths;
 
 namespace HopfieldDemo
 {
@@ -24,14 +25,9 @@ namespace HopfieldDemo
         {
             InitializeComponent();
             //var network = new MyFirstHopfieldNetwork();
-
-            var controlToFind = (ToggleButton)_GetControlIn(DrawingGrid, new GridCoordinates(1, 2));
-            if((string)controlToFind.Content == "Yup")
-            {
-                var a = 0;
-            }
-            
         }
+
+
 
         private UIElement _GetControlIn(Grid grid, GridCoordinates controlCoordinates)
         {
@@ -51,6 +47,62 @@ namespace HopfieldDemo
             var colIndex = Grid.GetColumn(toggleButton);
 
             return new GridCoordinates(rowIndex, colIndex);
+        }
+
+        private HopfieldNetwork hopfieldNetwork;
+
+        private void TrainButton_Click(object sender, RoutedEventArgs e)
+        {
+            var colCount = 5;
+            var rowCount = 5;
+
+            var pattern = new double[colCount * rowCount];
+
+            for(var row=0; row<rowCount; row++)
+            {
+                for(var col=0; col<colCount; col++)
+                {
+                    pattern[row*colCount + col] = ((ToggleButton)_GetControlIn(DrawingGrid, new GridCoordinates(row, col))).IsChecked.Value 
+                        ? 1.0
+                        : 0.0;
+                }
+            }
+
+            var hopfieldPattern = new HopfieldPattern(pattern);
+            hopfieldNetwork = hopfieldNetwork ?? new HopfieldNetwork(25);
+            hopfieldNetwork.Train(hopfieldPattern);
+        }
+
+        private void RecognizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            var colCount = 5;
+            var rowCount = 5;
+
+            var pattern = new double[colCount * rowCount];
+
+            for (var row = 0; row < rowCount; row++)
+            {
+                for (var col = 0; col < colCount; col++)
+                {
+                    pattern[row * colCount + col] = ((ToggleButton)_GetControlIn(DrawingGrid, new GridCoordinates(row, col))).IsChecked.Value
+                        ? 1.0
+                        : 0.0;
+                }
+            }
+
+            var hopfieldPattern = new HopfieldPattern(pattern);
+            var recognizedPattern = hopfieldNetwork.Recognize(hopfieldPattern);
+
+            for (var row = 0; row < rowCount; row++)
+            {
+                for (var col = 0; col < colCount; col++)
+                {
+                    ((ToggleButton) _GetControlIn(DrawingGrid, new GridCoordinates(row, col))).IsChecked =
+                        recognizedPattern[row*colCount + col] <= 0
+                            ? false
+                            : true;
+                }
+            }
         }
     }
 

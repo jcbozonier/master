@@ -49,7 +49,12 @@
             <ToggleButton Grid.Row="4" Grid.Column="4" x:Name="button25">Clicky</ToggleButton>
         </Grid>
         <Grid x:Name="grid1" Grid.Row="1" >
-            
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="TrainButton" Content="Train" Click="TrainButton_Click" />
+            <Button x:Name="RecognizeButton" Grid.Column="1" Content="Recognize" Click="RecognizeButton_Click" />
         </Grid>
     </Grid>
 </Window>

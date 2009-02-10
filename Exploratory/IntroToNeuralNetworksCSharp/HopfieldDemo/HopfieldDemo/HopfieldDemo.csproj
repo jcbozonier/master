@@ -96,6 +96,12 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleMaths\SimpleMaths.csproj">
+      <Project>{B9369F25-AE9D-4923-A495-9F076A755249}</Project>
+      <Name>SimpleMaths</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
