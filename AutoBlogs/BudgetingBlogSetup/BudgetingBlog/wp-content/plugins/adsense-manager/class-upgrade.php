@@ -7,7 +7,7 @@ class adsensem_upgrade {
 	
 		$upgraded=false;
 		/* List of possible upgrade paths here: Ensure that versions automagically stack on top of one another
-				e.g. v1.x to v3.x should be possilbe v1.x > v2.x > v3.x */
+				e.g. v1.x to v3.x should be possible v1.x > v2.x > v3.x */
 		
 		if(adsensem_admin::version_upgrade($_adsensem['version'],"3.0")){adsensem_upgrade::v2_x_to_3_0(); $upgraded=true;}
 	
